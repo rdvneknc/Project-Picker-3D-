@@ -52,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "SectionFinish")
         {
             movementEnabled = false;
-            Debug.Log("WORKSS");
         }
     }
 

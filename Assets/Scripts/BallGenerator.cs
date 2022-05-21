@@ -8,9 +8,9 @@ public class BallGenerator : MonoBehaviour
     public GameObject SectionStart;
     public GameObject SectionFinish;
 
-    public int ballsPrefabCount = 4;
+    public static int ballsPrefabCount = 4;
 
-    public bool stopSpawning = false;
+    public static bool stopSpawning = true;
     public float spawnTime;
     public float spawnDelay;
 
@@ -29,13 +29,20 @@ public class BallGenerator : MonoBehaviour
     {
         Vector3 randomBallPosition = new Vector3(Random.Range(-3.5f, 3.5f), 1.7f, Random.Range(SectionStart.transform.position.z, SectionFinish.transform.position.z));
 
-        for (int i = 0; i < ballsPrefabCount; i++)
+        if (stopSpawning == false)
         {
             Instantiate(BallsPrefab, randomBallPosition, Quaternion.identity);
-            if(stopSpawning == false)
+            CancelInvoke("CreateBalls");
+            
+
+            /*for (int i = 0; i < ballsPrefabCount; i++)
             {
-                CancelInvoke("CreateBalls");
-            }
+                Instantiate(BallsPrefab, randomBallPosition, Quaternion.identity);
+                if(stopSpawning == false)
+                {
+                    CancelInvoke("CreateBalls");
+                }
+            }*/
         }
     }
 }

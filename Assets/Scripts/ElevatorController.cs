@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ElevatorController : MonoBehaviour
 {
-    public static float score;
-    public float minimumScore;
+    public static float score = 0;
+    public static float minimumScore = 5;
     public Rigidbody rbElevator;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class ElevatorController : MonoBehaviour
     {
         if (other.gameObject.tag == "Ball")
         {
-            score += +1;
+            score += 1;
             Destroy(other.gameObject);
             
 
