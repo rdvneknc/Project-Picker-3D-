@@ -5,7 +5,7 @@ using UnityEngine;
 public class ElevatorController : MonoBehaviour
 {
     public static float score = 0;
-    public static float minimumScore = 10;
+    public static float minimumScore = 5;
     public Rigidbody rbElevator;
     // Start is called before the first frame update
     void Start()
@@ -38,6 +38,7 @@ public class ElevatorController : MonoBehaviour
             
 
         }
+
     }
 
     IEnumerator WaitForMovement()

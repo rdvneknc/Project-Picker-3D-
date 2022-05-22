@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7033162077418975629, guid: 40af375d721e1b84ca149128b54813e9, type: 3}
       propertyPath: spawnDelay
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7033162077418975629, guid: 40af375d721e1b84ca149128b54813e9, type: 3}
       propertyPath: BallsPrefab

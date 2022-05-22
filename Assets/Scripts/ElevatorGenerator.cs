@@ -17,7 +17,7 @@ public class ElevatorGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (generateElevator == false && Player.transform.position.z >= Elevator.transform.position.z + 10)
+        if (generateElevator == false && GameManager.levelCompleted == false)
         {
             generateElevator = true;
             StartCoroutine(CreateElevator());

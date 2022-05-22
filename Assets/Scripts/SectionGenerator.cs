@@ -17,7 +17,7 @@ public class SectionGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (generateSection == false)
+        if (generateSection == false && GameManager.levelCompleted == false)
         {
             generateSection = true;
             StartCoroutine(CreateSection());

@@ -49,6 +49,13 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(-3.96f, transform.position.y, transform.position.z);
         }
+
+        Vector3 stablePositionY = new Vector3(transform.position.x, 1.66f, transform.position.z);
+
+        if (transform.position.y <= 1.62f || transform.position.y>= 1.72f)
+        {
+            transform.position = stablePositionY;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -56,6 +63,11 @@ public class PlayerMovement : MonoBehaviour
         {
             movementEnabled = false;
             completedSectionCount += 1;
+        }
+
+        if(other.gameObject.tag == "SectionStart")
+        {
+            ElevatorController.score = 0;
         }
     }
 

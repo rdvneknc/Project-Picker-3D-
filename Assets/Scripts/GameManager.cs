@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    
     public static bool levelCompleted = false;
 
     private void Update()
     {
-        if (PlayerMovement.completedSectionCount >= 15)
+        if (PlayerMovement.completedSectionCount >= 12)
         {
             levelCompleted = true;
         }
 
-        if (levelCompleted == true)
+        /*if (levelCompleted == true)
         {
-            SectionGenerator.generateSection = false;
+            StopAllCoroutines();
+            //SectionGenerator.generateSection = false;
             BallGenerator.stopSpawning = true;
-            ElevatorGenerator.generateElevator = false;
-        }
+            //ElevatorGenerator.generateElevator = false;
+        }*/
+    }
+
+    public void LevelCompleted()
+    {
+        Debug.Log("LEVEL COMPLETED");
     }
 }
