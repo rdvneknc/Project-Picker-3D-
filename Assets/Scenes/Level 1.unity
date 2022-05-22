@@ -602,7 +602,7 @@ Rigidbody:
   m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -671,7 +671,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Elevator: {fileID: 472872817223498317, guid: fc12df8d17285154396c6832683549fb, type: 3}
   Player: {fileID: 307653892}
-  zPosition: 124.5
   generateElevator: 0
 --- !u!4 &583205706
 Transform:
@@ -1218,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 472872817223498312, guid: fc12df8d17285154396c6832683549fb, type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 472872817223498313, guid: fc12df8d17285154396c6832683549fb, type: 3}
       propertyPath: m_RootOrder
@@ -1315,8 +1314,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Section: {fileID: 8488281644257050414, guid: 7a0a84bb23ea4a54f8d6127a1f62773f, type: 3}
   Player: {fileID: 307653892}
-  zPosition: 83
-  yPosition: 0
   generateSection: 0
 --- !u!1 &1900547401
 GameObject:

@@ -8,7 +8,7 @@ public class BallGenerator : MonoBehaviour
     public GameObject SectionStart;
     public GameObject SectionFinish;
 
-    public static int ballsPrefabCount = 4;
+    public static int ballsPrefabCount;
 
     public static bool stopSpawning = true;
     public float spawnTime;
@@ -17,6 +17,7 @@ public class BallGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         InvokeRepeating("CreateBalls", spawnTime, spawnDelay);
     }
 

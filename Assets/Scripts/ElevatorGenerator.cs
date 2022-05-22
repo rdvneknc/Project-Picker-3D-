@@ -6,7 +6,7 @@ public class ElevatorGenerator : MonoBehaviour
 {
     public GameObject Elevator;
     public GameObject Player;
-    public float zPosition = 124.5f;
+    private float zPosition = 124.5f;
     public bool generateElevator = false;
 
     void Start()
