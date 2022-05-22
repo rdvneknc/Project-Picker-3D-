@@ -22,12 +22,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
+        
 
     }
 
     void FixedUpdate()
     {
+
         if (movementEnabled == true)
         {
             rb.velocity = new Vector3(0, 0, 5) * verticalSpeed;

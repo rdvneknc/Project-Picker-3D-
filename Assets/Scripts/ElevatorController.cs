@@ -5,7 +5,7 @@ using UnityEngine;
 public class ElevatorController : MonoBehaviour
 {
     public static float score = 0;
-    public static float minimumScore = 5;
+    public static float minimumScore = 10;
     public Rigidbody rbElevator;
     // Start is called before the first frame update
     void Start()
@@ -16,11 +16,13 @@ public class ElevatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("" + score);
+        Debug.Log("Minimum:" + minimumScore + "Score:" + score);
+        
     }
 
     private void FixedUpdate()
     {
+
         if (score >= minimumScore)
         {
             StartCoroutine(WaitForMovement());
@@ -49,6 +51,8 @@ public class ElevatorController : MonoBehaviour
         rbElevator.MovePosition(liftElevator);
 
         yield return new WaitForSeconds(2);
+
+        //rbElevator.constraints = RigidbodyConstraints.FreezePositionY;
 
         score = 0;
 
