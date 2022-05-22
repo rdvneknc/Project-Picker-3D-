@@ -671,7 +671,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Elevator: {fileID: 472872817223498317, guid: fc12df8d17285154396c6832683549fb, type: 3}
   Player: {fileID: 307653892}
-  generateElevator: 0
 --- !u!4 &583205706
 Transform:
   m_ObjectHideFlags: 0
@@ -1314,7 +1313,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Section: {fileID: 8488281644257050414, guid: 7a0a84bb23ea4a54f8d6127a1f62773f, type: 3}
   Player: {fileID: 307653892}
-  generateSection: 0
 --- !u!1 &1900547401
 GameObject:
   m_ObjectHideFlags: 0

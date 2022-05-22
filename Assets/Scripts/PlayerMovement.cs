@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool movementEnabled = true;
 
+    public static int completedSectionCount;
+
     private void Awake()
     {
         rb.GetComponent<Rigidbody>();
@@ -22,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        
+        Debug.Log("Copleted Section: " + completedSectionCount);
 
     }
 
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "SectionFinish")
         {
             movementEnabled = false;
+            completedSectionCount += 1;
         }
     }
 

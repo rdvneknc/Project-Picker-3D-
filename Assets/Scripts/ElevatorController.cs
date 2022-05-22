@@ -16,7 +16,7 @@ public class ElevatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Minimum:" + minimumScore + "Score:" + score);
+        //Debug.Log("Minimum:" + minimumScore + "Score:" + score);
         
     }
 

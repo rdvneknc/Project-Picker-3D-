@@ -7,7 +7,7 @@ public class SectionGenerator : MonoBehaviour
     public GameObject Section;
     public GameObject Player;
     private float zPosition = 83;
-    public bool generateSection = false;
+    public static bool generateSection = false;
     // Start is called before the first frame update
     void Start()
     {
