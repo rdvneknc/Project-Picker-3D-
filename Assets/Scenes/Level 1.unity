@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Section 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9038439390202511778, guid: 7a0a84bb23ea4a54f8d6127a1f62773f, type: 3}
+      propertyPath: spawnDelay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9211637050675185518, guid: 7a0a84bb23ea4a54f8d6127a1f62773f, type: 3}
       propertyPath: m_RootOrder
       value: 6

@@ -28,7 +28,7 @@ public class LevelFinalGenerator : MonoBehaviour
     {
         Instantiate(flag, new Vector3(0, 2.38f, flagZPosition), Quaternion.identity);
         flagZPosition += 249;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(30);
         generateFlag = false;
         BallGenerator.stopSpawning = false;
     }
