@@ -29,7 +29,7 @@ public class SectionGenerator : MonoBehaviour
     {
         Instantiate(Section, new Vector3(0, 0, zPosition), Quaternion.identity);
         zPosition += 83;
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(15);
         generateSection = false;
         BallGenerator.stopSpawning = false;
     }

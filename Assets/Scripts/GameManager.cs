@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
             StopAllCoroutines();
             BallGenerator.stopSpawning = true;
             PlayerMovement.movementEnabled = false;
-
+            new WaitForSeconds(3);
         }
     }
 

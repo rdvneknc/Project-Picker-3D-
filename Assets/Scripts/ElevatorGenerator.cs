@@ -28,7 +28,7 @@ public class ElevatorGenerator : MonoBehaviour
     {
         Instantiate(Elevator, new Vector3(0, -0.5f, zPosition), Quaternion.identity);
         zPosition += 83;
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(15);
         generateElevator = false;
         //BallGenerator.stopSpawning = false;
     }
