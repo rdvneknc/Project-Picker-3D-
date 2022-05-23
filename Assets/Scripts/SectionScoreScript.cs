@@ -10,5 +10,11 @@ public class SectionScoreScript : MonoBehaviour
     public static float minimumScore = 5;
 
 
-    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("TotalScore");
+        }
+    }
 }

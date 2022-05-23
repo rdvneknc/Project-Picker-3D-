@@ -27,6 +27,7 @@ public class ElevatorController : MonoBehaviour
         {
             SectionScoreScript.score += 1;
             SectionScoreScript.totalScore += 1;
+            PlayerPrefs.SetFloat("TotalScore", SectionScoreScript.totalScore);
             Destroy(other.gameObject);
         }
     }

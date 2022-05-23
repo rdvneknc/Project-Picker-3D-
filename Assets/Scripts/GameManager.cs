@@ -7,6 +7,11 @@ public class GameManager : MonoBehaviour
     
     public static bool levelCompleted = false;
 
+    private void Start()
+    {
+
+    }
+
     private void Update()
     {
         if (PlayerMovement.completedSectionCount >= 12 && SectionScoreScript.score >= SectionScoreScript.minimumScore)

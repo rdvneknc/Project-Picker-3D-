@@ -10,6 +10,11 @@ public class TotalScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalScoreText.text = "Total Score: " + SectionScoreScript.totalScore;
+        totalScoreText.text = "Total Score: " + PlayerPrefs.GetFloat("TotalScore", 0);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteKey("TotalScore");
+        }
     }
 }
