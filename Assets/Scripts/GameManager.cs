@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         new WaitForSeconds(2);
         levelCompleted = false;
         //BallGenerator.stopSpawning = false;
-        //PlayerMovement.movementEnabled = true;
+        PlayerMovement.movementEnabled = true;
         //SectionGenerator.generateSection = false;
 
     }

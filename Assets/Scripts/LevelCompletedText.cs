@@ -22,7 +22,7 @@ public class LevelCompletedText : MonoBehaviour
             levelCompleted.gameObject.SetActive(true);
         }
 
-        if (GameManager.levelCompleted == false)
+        else
         {
             levelCompleted.gameObject.SetActive(false);
         }

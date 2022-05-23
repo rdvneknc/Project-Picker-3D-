@@ -20,7 +20,7 @@ public class NextLevelButtonText : MonoBehaviour
             nextLevelButton.gameObject.SetActive(true);
         }
 
-        else
+        if (GameManager.levelCompleted == false)
         {
             nextLevelButton.gameObject.SetActive(false);
         }
