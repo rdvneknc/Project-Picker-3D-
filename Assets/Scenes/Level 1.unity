@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789ec80c39fd0b84db847ad54492116f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flag: {fileID: 3908634900098379506, guid: 1dbc18d9025d094499bd76b577768ba0, type: 3}
+  Flag: {fileID: 3908634900098379506, guid: 1dbc18d9025d094499bd76b577768ba0, type: 3}
   flagZPosition: 40
 --- !u!1 &1058172456
 GameObject:

@@ -8,16 +8,10 @@ public class SectionGenerator : MonoBehaviour
     public GameObject Player;
     public float zPosition = 83;
     public static bool generateSection = false;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (generateSection == false /*&& GameManager.levelCompleted == false*/)
+        if (generateSection == false)
         {
             generateSection = true;
             StartCoroutine(CreateSection());

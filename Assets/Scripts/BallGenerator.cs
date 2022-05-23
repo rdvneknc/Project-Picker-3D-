@@ -28,17 +28,12 @@ public class BallGenerator : MonoBehaviour
     }
     void CreateBalls()
     {
-        //Vector3 randomBallPosition = new Vector3(Random.Range(-3.5f, 3.5f), 1.8f, Random.Range(SectionStart.transform.position.z, SectionFinish.transform.position.z));
-
         if (stopSpawning == false)
         {
-            //Instantiate(BallsPrefab, randomBallPosition, Quaternion.identity);
-            //CancelInvoke("CreateBalls");
-
-
             for (int i = 0; i < ballsPrefabCount; i++)
             {
                 Instantiate(BallsPrefab, new Vector3(Random.Range(-3f, 3f), 1.8f, Random.Range(SectionStart.transform.position.z, SectionFinish.transform.position.z)), Quaternion.identity);
+                
                 if(stopSpawning == false)
                 {
                     CancelInvoke("CreateBalls");

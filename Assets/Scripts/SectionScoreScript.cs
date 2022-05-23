@@ -9,9 +9,4 @@ public class SectionScoreScript : MonoBehaviour
     public static float totalScore;
     public static float minimumScore = 5;
 
-
-    private void Update()
-    {
-      
-    }
 }

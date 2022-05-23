@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class LevelFinalGenerator : MonoBehaviour
 {
-    public GameObject flag;
+    public GameObject Flag;
     public float flagZPosition = 40;
     public static bool generateFlag = false;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (generateFlag == false /*&& GameManager.levelCompleted == false*/)
+        if (generateFlag == false)
         {
             generateFlag = true;
             StartCoroutine(CreateSection());
@@ -26,7 +20,7 @@ public class LevelFinalGenerator : MonoBehaviour
 
     IEnumerator CreateSection()
     {
-        Instantiate(flag, new Vector3(0, 2.38f, flagZPosition), Quaternion.identity);
+        Instantiate(Flag, new Vector3(0, 2.38f, flagZPosition), Quaternion.identity);
         flagZPosition += 249;
         yield return new WaitForSeconds(30);
         generateFlag = false;

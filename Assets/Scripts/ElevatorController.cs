@@ -36,8 +36,6 @@ public class ElevatorController : MonoBehaviour
     {
         Vector3 liftElevator = new Vector3(transform.position.x, 0, transform.position.z);
 
-        //yield return new WaitForSeconds(1);
-
         rbElevator.MovePosition(liftElevator);
 
         yield return new WaitForSeconds(2);
