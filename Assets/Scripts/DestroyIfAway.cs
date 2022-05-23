@@ -7,6 +7,6 @@ public class DestroyIfAway : MonoBehaviour
 
     public void OnBecameInvisible()
     {
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 }
