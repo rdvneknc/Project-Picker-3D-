@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,18 +16,30 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerMovement.completedSectionCount >= 12 && SectionScoreScript.score >= SectionScoreScript.minimumScore)
+        if (PlayerMovement.completedSectionCount >= 6 && SectionScoreScript.score >= SectionScoreScript.minimumScore)
         {
             levelCompleted = true;
         }
 
         if (levelCompleted == true)
         {
-            StopAllCoroutines();
-            BallGenerator.stopSpawning = true;
+
             PlayerMovement.movementEnabled = false;
-            new WaitForSeconds(3);
+            //new WaitForSeconds(3);
+            SectionScoreScript.score = 0;   
         }
+
+    }
+
+    public void ContinueGame()
+    {
+        PlayerMovement.completedSectionCount = 0;
+        new WaitForSeconds(2);
+        levelCompleted = false;
+        //BallGenerator.stopSpawning = false;
+        //PlayerMovement.movementEnabled = true;
+        //SectionGenerator.generateSection = false;
+
     }
 
 

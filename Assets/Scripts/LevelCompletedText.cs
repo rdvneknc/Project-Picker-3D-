@@ -11,7 +11,7 @@ public class LevelCompletedText : MonoBehaviour
     {
         levelCompleted.text = "LEVEL COMPLETED!";
 
-        levelCompleted.gameObject.SetActive(false);
+        //levelCompleted.gameObject.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -22,6 +22,11 @@ public class LevelCompletedText : MonoBehaviour
             levelCompleted.gameObject.SetActive(true);
         }
 
+        if (GameManager.levelCompleted == false)
+        {
+            levelCompleted.gameObject.SetActive(false);
+        }
 
     }
+
 }

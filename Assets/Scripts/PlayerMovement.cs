@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Start()
     {
-
+        new WaitForSeconds(2);
     }
 
     private void Update()
