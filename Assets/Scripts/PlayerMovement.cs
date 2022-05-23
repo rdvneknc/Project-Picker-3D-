@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.gameObject.tag == "SectionStart")
         {
-            ElevatorController.score = 0;
+            SectionScoreScript.score = 0;
         }
     }
 

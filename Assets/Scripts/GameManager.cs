@@ -9,22 +9,19 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerMovement.completedSectionCount >= 12)
+        if (PlayerMovement.completedSectionCount >= 12 && SectionScoreScript.score >= SectionScoreScript.minimumScore)
         {
             levelCompleted = true;
         }
 
-        /*if (levelCompleted == true)
+        if (levelCompleted == true)
         {
             StopAllCoroutines();
-            //SectionGenerator.generateSection = false;
             BallGenerator.stopSpawning = true;
-            //ElevatorGenerator.generateElevator = false;
-        }*/
+            PlayerMovement.movementEnabled = false;
+
+        }
     }
 
-    public void LevelCompleted()
-    {
-        Debug.Log("LEVEL COMPLETED");
-    }
+
 }

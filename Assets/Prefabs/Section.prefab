@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8488281645223537952}
   - component: {fileID: 8488281645223537953}
-  - component: {fileID: 4486741824849195772}
+  - component: {fileID: 2392467834891270683}
   m_Layer: 0
   m_Name: SectionStart
   m_TagString: SectionStart
@@ -479,7 +479,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 2, z: 1}
   m_Center: {x: 0, y: 2, z: 0}
---- !u!114 &4486741824849195772
+--- !u!114 &2392467834891270683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8488281645223537958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1e83328aecbad499ea1b3242107ca3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f271a21dc636854ba20d623cdb8ec5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1515279100875496359
