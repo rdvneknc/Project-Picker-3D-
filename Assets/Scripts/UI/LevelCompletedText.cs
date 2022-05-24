@@ -10,7 +10,6 @@ public class LevelCompletedText : MonoBehaviour
     private void Start()
     {
         levelCompleted.text = "LEVEL COMPLETED!";
-
     }
 
     void Update()
@@ -25,7 +24,6 @@ public class LevelCompletedText : MonoBehaviour
         {
             levelCompleted.gameObject.SetActive(false);
         }
-
     }
 
 }

@@ -6,6 +6,7 @@ public class SectionGenerator : MonoBehaviour
 {
     public GameObject Section;
     public GameObject Player;
+
     public float zPosition = 83;
     public static bool generateSection = false;
 
@@ -16,7 +17,6 @@ public class SectionGenerator : MonoBehaviour
             generateSection = true;
             StartCoroutine(CreateSection());
         }
-
     }
 
     IEnumerator CreateSection()
@@ -28,6 +28,7 @@ public class SectionGenerator : MonoBehaviour
         //line for challenge level
 
         yield return new WaitForSeconds(15);
+
         generateSection = false;
         BallGenerator.stopSpawning = false;
     }

@@ -6,15 +6,10 @@ public class ElevatorGenerator : MonoBehaviour
 {
     public GameObject Elevator;
     public GameObject Player;
+
     private float zPosition = 124.5f;
     public static bool generateElevator = false;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (generateElevator == false && GameManager.levelCompleted == false)
@@ -30,6 +25,5 @@ public class ElevatorGenerator : MonoBehaviour
         zPosition += 83;
         yield return new WaitForSeconds(15);
         generateElevator = false;
-        //BallGenerator.stopSpawning = false;
     }
 }

@@ -17,16 +17,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.GetComponent<Rigidbody>();
     }
-    void Start()
-    {
-        new WaitForSeconds(2);
-    }
-
-    private void Update()
-    {
-        Debug.Log("Copleted Section: " + completedSectionCount);
-
-    }
 
     void FixedUpdate()
     {

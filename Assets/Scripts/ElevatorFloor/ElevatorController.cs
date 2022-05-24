@@ -11,10 +11,8 @@ public class ElevatorController : MonoBehaviour
         rbElevator.GetComponent<Rigidbody>();
     }
 
-
     private void FixedUpdate()
     {
-
         if (SectionScoreScript.score >= SectionScoreScript.minimumScore)
         {
             StartCoroutine(WaitForMovement());
@@ -26,8 +24,11 @@ public class ElevatorController : MonoBehaviour
         if (other.gameObject.tag == "Ball")
         {
             SectionScoreScript.score += 1;
+
             SectionScoreScript.totalScore += 1;
+
             PlayerPrefs.SetFloat("TotalScore", SectionScoreScript.totalScore);
+
             Destroy(other.gameObject);
         }
     }

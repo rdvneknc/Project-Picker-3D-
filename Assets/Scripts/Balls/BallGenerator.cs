@@ -11,21 +11,15 @@ public class BallGenerator : MonoBehaviour
     public static int ballsPrefabCount = 3;
 
     public static bool stopSpawning = true;
+    
     public float spawnTime;
     public float spawnDelay;
 
-    // Start is called before the first frame update
     void Start()
     {
-
         InvokeRepeating("CreateBalls", spawnTime, spawnDelay);
     }
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        
-    }
     void CreateBalls()
     {
         if (stopSpawning == false)

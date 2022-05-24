@@ -17,22 +17,23 @@ public class GameManager : MonoBehaviour
             levelCompleted = true;
         }
 
+
         if (levelCompleted == true)
         {
             PlayerMovement.movementEnabled = false;
             SectionScoreScript.score = 0;   
         }
-
-
     }
 
     public void ContinueGame()
     {
         PlayerMovement.completedSectionCount = 0;
-        new WaitForSeconds(2);
-        levelCompleted = false;
-        PlayerMovement.movementEnabled = true;
 
+        new WaitForSeconds(2);
+
+        levelCompleted = false;
+
+        PlayerMovement.movementEnabled = true;
     }
 
 

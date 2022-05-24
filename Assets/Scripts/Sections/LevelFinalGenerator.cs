@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelFinalGenerator : MonoBehaviour
 {
     public GameObject Flag;
+
     public float flagZPosition = 40;
     public static bool generateFlag = false;
 
@@ -15,7 +16,6 @@ public class LevelFinalGenerator : MonoBehaviour
             generateFlag = true;
             StartCoroutine(CreateSection());
         }
-
     }
 
     IEnumerator CreateSection()

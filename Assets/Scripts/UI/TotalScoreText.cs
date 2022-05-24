@@ -7,7 +7,6 @@ public class TotalScoreText : MonoBehaviour
 {
     public Text totalScoreText;
 
-    // Update is called once per frame
     void Update()
     {
         totalScoreText.text = "Total Score: " + PlayerPrefs.GetFloat("TotalScore", 0);
