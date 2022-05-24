@@ -19,10 +19,10 @@ public class GameManager : MonoBehaviour
 
         if (levelCompleted == true)
         {
-
             PlayerMovement.movementEnabled = false;
             SectionScoreScript.score = 0;   
         }
+
 
     }
 
