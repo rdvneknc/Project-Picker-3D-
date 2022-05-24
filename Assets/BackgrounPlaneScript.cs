@@ -6,11 +6,14 @@ public class BackgrounPlaneScript : MonoBehaviour
 {
 
     public Plane backgroundPlane;
+
+    public string planeName;
+    public string description;
     public Color backgroundPlaneColor;
 
     void Start()
     {
-        GetComponent<Renderer>().material.color = Plane.planeColor;
+        
     }
 
    
