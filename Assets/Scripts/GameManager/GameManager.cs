@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerMovement.completedSectionCount >= 12 && SectionScoreScript.score >= SectionScoreScript.minimumScore)
+        if (PlayerMovement.completedSectionCount >= 9 && SectionScoreScript.score >= SectionScoreScript.minimumScore)
             //  Player'ý 3 cube kullanarak amatörce hazýrladýðým için üzerinde 3 collider var. Finish line'ý her geçtiðinde
-            // completedSectionCount 3 olarak artýyor. Bu nedenle yukarýdaki 12 aslýnda 4 section tamamlandýðýný gösteriyor.
+            // completedSectionCount 3 olarak artýyor. Bu nedenle yukarýdaki 9 aslýnda 3 section tamamlandýðýný gösteriyor.
         {
             levelCompleted = true;
         }
